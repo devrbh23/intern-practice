@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="hero-section">
+      <div class="container">
+        <div class="positon-text">
+          <img class="image" src="thumb-1920-82317.jpg" alt="" />
+          <div class="middle">
+            <H1 class="title">WE ARE <span>BRAINANTS</span> </H1>
+            <p class="para">Making Awesome Stuff.</p>
+
+            <div class="about">
+              <button class="btn1">ABOUT US</button>
+              <button class="btn2">HIRE US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <nav class="nav-column">
+          <header>
+            <img class="banner" src="cropped-Stamo-1.png" alt="" />
+            <div class="nav-container">
+              <div class="icon-container">
+                <a class="nav-bar " id="nav-hamburger">
+                  <img
+                    class="nav-icon"
+                    src="menu_navigation_nav_options_list_lists-512.png"
+                    alt=""
+                /></a>
+
+                <a class="nav-bar hide" id="nav-cross">
+                  <img src="close_black_256x256.png" alt="" class="nav-icon" />
+                </a>
+              </div>
+              <ul class="nav-list" id="menu">
+                <li>
+                  <a>HOME</a>
+                </li>
+                <li>
+                  <a>ABOUT US</a>
+                </li>
+                <li>
+                  <a>OUR PROJECTS</a>
+                </li>
+                <li>
+                  <a>NEWS</a>
+                </li>
+                <li>
+                  <a>CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="gray">
+        <p class="section-paraa">WHO ARE WE</p>
+        <h1 class="about-us">ABOUT US</h1>
+        <p class="section-para">
+          We are a technology company started in 2018 providing creative
+          solutions to clients around the world, creating products that get
+          attention and are meaningful.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="brown">
+        <p class="what">WHAT WE HAVE DONE</p>
+        <h1 class="our-project">OUR PROJECTS</h1>
+        <div class="section-first">
+          <div class="kaam">
+            <img class="kotha-pic" src="web_hi_res_512.png" alt="" />
+            <div class="sec-pad">
+              <h3>Kaam Kotha</h3>
+              <p>
+                Kaam Kotha is a free mobile application for rooms, jobs,
+                announcements, sales, daily average exchange rates, daily
+                airfare deals and Nepalese business directory within Australia.
+                Find what you’re looking for …
+              </p>
+            </div>
+          </div>
+          <div class="csit-int">
+            <img class="csit" src="ic_launcher.png" alt="" />
+            <div class="sec-pad">
+              <h3>CSIT Entrance</h3>
+              <p>
+                CSIT Entrance App is a first-ever CSIT entrance preparing app
+                developed by a dedicated students team named Brainants. This app
+                can also be helpful for IOE entrance preparing students. The …
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1 class="head-last">HAVE AN IDEA?</h1>
+        <h3 class="we-love">We would love to hear about it.</h3>
+        <div class="form-section">
+          <form action="#" id="formed">
+            <p>YOUR NAME (REQUIRED)</p>
+            <input type="text" />
+
+            <p>YOUR EMAIL (REQUIRED)</p>
+            <input type="text" />
+
+            <p>SUBJECT</p>
+            <input type="text" />
+
+            <p>YOUR MESSAGE</p>
+            <textarea form="formed" rows="12" cols="80"></textarea>
+            <input class="buttn" type="submit" value="SEND" />
+          </form>
+          <div class="last-section">
+            <h3 class="head3">WE ARE ACCEPTING NEW PROJECTS.</h3>
+            <p class="lastp">
+              In Brainants, we always seek for good projects which can uplift
+              our teams interest and make us work. We would love to hear your
+              idea and turn it into reality.
+            </p>
+            <div class="our-location">
+              <h3>Our Location</h3>
+              <div class="address">
+                <img class="location" src="19-512.png" alt="" />
+                <p>
+                  Nirmal Batika Tole
+                  <br />
+                  Tokha, Kathmandu
+                  <br />
+                  Nepal
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="foter-container">
+        <div class="touch">
+          <h1>Get in touch</h1>
+        </div>
+        <div class="foter-container2">
+          <div class="email">
+            <p class="touchus1">Email Us</p>
+            <p>info@brainants.com</p>
+          </div>
+          <div class="touchus">
+            <p class="touchus1">TALK TO US</p>
+            <p>(+977) 9867103880 / 9847603000</p>
+          </div>
+          <div class="follow-us">
+            <p>FOLLOW US</p>
+            <img class="follo-icon" src="md_5b321fd035f62.jpg" alt="" />
+            <img class="follo-icon1" src="download.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var hamburger = document.getElementById('nav-hamburger');
+      var menuList = document.getElementById('menu');
+      var cross = document.getElementById('nav-cross');
+      hamburger.addEventListener('click', function(e) {
+        cross.classList.toggle('hide');
+        menuList.classList.toggle('mobile');
+        hamburger.classList.toggle('hide');
+      });
+      cross.addEventListener('click', function(e) {
+        menuList.classList.toggle('mobile');
+        cross.classList.toggle('hide');
+        hamburger.classList.toggle('hide');
+      });
+    </script>
+  </body>
+</html>
